@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar focusTraversable="false">
+              <menus>
+                <Menu mnemonicParsing="false" text="New Game">
+                     <items>
+                        <MenuItem fx:id="start" mnemonicParsing="false" text="Start" />
+                     </items></Menu>
+                <Menu mnemonicParsing="false" text="Level">
+                  <items>
+                    <MenuItem fx:id="difficult" mnemonicParsing="false" text="Difficult" />
+                        <MenuItem fx:id="medium" mnemonicParsing="false" text="Medium" />
+                        <MenuItem fx:id="easy" mnemonicParsing="false" text="Easy" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Score">
+                     <items>
+                        <MenuItem fx:id="showScore" mnemonicParsing="false" text="Show Score" />
+                     </items></Menu>
+                  <Menu mnemonicParsing="false" text="Save">
+                     <items>
+                        <MenuItem fx:id="save" mnemonicParsing="false" text="Save" />
+                     </items></Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem fx:id="help" mnemonicParsing="false" text="Help" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="16.0" prefWidth="342.0" />
+            <Label prefHeight="21.0" prefWidth="254.0" text=" Welcome to &quot;Guess My Number&quot; Game! " />
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="355.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="textArea" editable="false" layoutX="50.0" layoutY="42.0" prefHeight="200.0" prefWidth="200.0" text="&#10;&#10;" />
+            <Button fx:id="getAnswerButton" layoutX="105.0" layoutY="272.0" mnemonicParsing="false" text="Get Answer!" />
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="350.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textField" layoutX="69.0" layoutY="175.0" prefHeight="26.0" prefWidth="161.0" promptText="Write your number..." />
+            <Button fx:id="deleteButton" layoutX="174.0" layoutY="213.0" mnemonicParsing="false" text="Delete" />
+            <Button fx:id="enterButton" layoutX="69.0" layoutY="213.0" mnemonicParsing="false" text="Enter" />
+            <ImageView fitHeight="115.0" fitWidth="169.0" layoutX="66.0" layoutY="42.0" AnchorPane.bottomAnchor="193.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="42.0">
+               <image>
+                  <Image url="@../resource/Image.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
